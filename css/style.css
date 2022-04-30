@@ -1,0 +1,111 @@
+/* Start Varilable */
+:root {
+    --primary : hsl(31, 77%, 52%);
+    --primary1 : hsl(184, 100%, 22%);
+    --primary2 : hsl(179, 100%, 13%);
+    --secondry : hsla(0, 0%, 100%, 0.75);
+    --secondry1 : hsl(0, 0%, 95%);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: var(--secondry1);
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    padding-top: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secondry1);
+}
+@media (max-width: 1200px) {
+    body {
+        width: 1440px;
+    }
+}
+@media (max-width: 767px) {
+    body {
+        width: 375px;
+    }
+}
+/* End Varilable */
+
+.card {
+    margin: 170px 260px;
+    width: 880px;
+    height: 460px;
+    display: flex;
+}
+@media (max-width: 767px) {
+    .card {
+        margin: 88px 25px;
+        flex-direction: column;
+        width: 325px;
+        height: 1326;
+    }
+}
+.card div>p {
+    padding: 10px 0 60px;
+    color: var(--secondry);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+}
+/* .card div>img {
+    max-width: 64px;
+    max-height: 40px;
+} */
+.card div>a {
+    background-color: var(--secondry1);
+    padding: 10px 32px;
+    border-radius: 30px;
+}
+.box1 {
+    background-color: var(--primary);
+    padding: 45px 45px 60px;;
+}
+.box1 a {
+    color: var(--primary);
+}
+.box1 a:hover {
+    color: var(--secondry1);
+    background-color: transparent;
+    border: 2px solid var(--secondry1);
+    cursor: pointer;
+}
+.box2 {
+    background-color: var(--primary1);
+    padding: 45px 45px 60px;;
+}
+.box2 a {
+    color: var(--primary1);
+}
+.box2  a:hover {
+    color: var(--secondry1);
+    background-color: transparent;
+    border: 2px solid var(--secondry1);
+    cursor: pointer;
+}
+.box3 {
+    background-color: var(--primary2);
+    padding: 45px 45px 60px;
+}
+.box3 a {
+    color: var(--primary2);
+}
+.box3 a:hover {
+    color: var(--secondry1);
+    background-color: transparent;
+    border: 2px solid var(--secondry1);
+    cursor: pointer;
+}
